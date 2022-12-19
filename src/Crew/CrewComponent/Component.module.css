@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+.main-container {
+  display: flex;
+  align-items: center;
+}
+
+.text-container {
+  margin-right: 5vw;
+}
+
+.role,
+.name {
+  font-family: 'Bellefair', serif;
+  text-transform: uppercase;
+}
+
+.role {
+  color: #777777;
+  font-size: 1.4rem;
+  font-weight: 400;
+  margin: 0;
+}
+
+.name {
+  color: #ffffff;
+  font-size: 3rem;
+  font-weight: 400;
+  margin: 0.5em 0;
+}
+
+.info {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #d0d6f9;
+  line-height: 30px;
+  width: 31vw;
+}
+
+.person-nav-container {
+  display: flex;
+  margin-top: 5vw;
+}
+
+.basic-person-nav {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.basic-person-nav:hover {
+  background-color: #ffffff;
+}
+
+.active-person-nav {
+  background-color: #ffffff;
+}
+
+.inActive-person-nav {
+  background-color: #979797;
+}
+
+.person-img {
+  width: 32vw;
+  height: 65vh;
+}
+
+/* This is a responsive part */
+/*                                                   Line 72                                                 */
+
+@media (min-width: 1600px) {
+  .role {
+    font-size: 1.6rem;
+  }
+  .name {
+    font-size: 3.5rem;
+  }
+  .info {
+    font-size: 1.4rem;
+    line-height: 35px;
+  }
+}
+@media (min-width: 1780px) {
+  .role {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .info {
+    font-size: 1.5rem;
+    line-height: 40px;
+  }
+  .basic-person-nav {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1.2em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .role {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 4.5rem;
+  }
+  .info {
+    font-size: 1.6rem;
+    line-height: 45px;
+  }
+  .basic-person-nav {
+    width: 1.3em;
+    height: 1.3em;
+    margin-right: 1.3em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .role {
+    font-size: 2.2rem;
+  }
+  .name {
+    font-size: 5rem;
+  }
+  .info {
+    font-size: 1.8rem;
+    line-height: 50px;
+  }
+
+  .basic-person-nav {
+    width: 1.4em;
+    height: 1.4em;
+    margin-right: 1.4em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .role {
+    font-size: 2.8rem;
+  }
+  .name {
+    font-size: 7rem;
+  }
+  .info {
+    font-size: 2.4rem;
+    line-height: 60px;
+  }
+  .basic-person-nav {
+    width: 1.8em;
+    height: 1.8em;
+    margin-right: 1.8em;
+  }
+}
+
+@media (max-width: 920px) {
+  body {
+    overflow: hidden;
+  }
+  .main-container {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+  .role {
+    font-size: 2rem;
+  }
+  .name {
+    font-size: 4rem;
+  }
+  .info {
+    font-size: 1.4rem;
+    line-height: 40px;
+    width: 70vw;
+  }
+  .basic-person-nav {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1.2em;
+  }
+  .person-img {
+    margin-top: 11vw;
+    width: 65vw;
+    height: 40vh;
+  }
+  .person-nav-container {
+    display: flex;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-width: 820px) {
+  .role {
+    font-size: 1.8rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .info {
+    font-size: 1.2rem;
+    line-height: 40px;
+    width: 70vw;
+  }
+  .basic-person-nav {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1.2em;
+  }
+
+  .person-nav-container {
+    display: flex;
+    margin-top: 5vw;
+  }
+}
+
+@media (max-width: 770px) {
+  .role {
+    font-size: 1.6rem;
+  }
+  .name {
+    font-size: 3rem;
+  }
+  .info {
+    font-size: 1.2rem;
+    line-height: 40px;
+    width: 70vw;
+  }
+  .basic-person-nav {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1.2em;
+  }
+  .person-img {
+    margin-top: 4vw;
+  }
+  .person-nav-container {
+    display: flex;
+    margin-top: 3vw;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    flex-direction: column-reverse;
+  }
+  .text-container {
+    margin-top: 5vw;
+  }
+  .role {
+    font-size: 1.4rem;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .info {
+    font-size: 1rem;
+    line-height: 30px;
+    width: 70vw;
+  }
+  .basic-person-nav {
+    width: 1.2em;
+    height: 1.2em;
+    margin-right: 1.2em;
+  }
+  .person-img {
+    margin: 0;
+    height: 30vh;
+  }
+}
+
+@media (max-width: 375px) {
+  .person-img {
+    width: 50vw;
+  }
+  .role {
+    font-size: 1rem;
+  }
+  .name {
+    font-size: 1.4rem;
+  }
+  .info {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+  .basic-person-nav {
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+  }
+}

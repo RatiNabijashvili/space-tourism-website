@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Bellefair&display=swap');
+
+.crew-container {
+  background-image: url('./img/background-crew-desktop.jpg');
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1em;
+}
+
+.component-container {
+  margin-top: 4em;
+}
+
+.main-text-container {
+  display: flex;
+}
+
+.number,
+.text {
+  font-family: 'Barlow Condensed', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+}
+
+.number {
+  font-weight: 700;
+  opacity: 0.3;
+}
+
+.text {
+  padding-left: 0.5em;
+  font-weight: 400;
+}
+
+/* This is a responsive part */
+/*                                                Line 47                                                      */
+
+@media (min-width: 1600px) {
+  .number,
+  .text {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 1780px) {
+  .number,
+  .text {
+    font-size: 1.7rem;
+  }
+  .component-container {
+    margin-top: 5em;
+  }
+}
+
+@media (min-width: 1920px) {
+  .number,
+  .text {
+    font-size: 1.9rem;
+  }
+  .component-container {
+    margin-top: 6em;
+  }
+}
+
+@media (min-width: 2000px) {
+  .number,
+  .text {
+    font-size: 2.1rem;
+  }
+  .component-container {
+    margin-top: 7em;
+  }
+}
+
+@media (min-width: 2200px) {
+  .main-container {
+    margin-top: 2em;
+  }
+  .number,
+  .text {
+    font-size: 2.6rem;
+  }
+  .component-container {
+    margin-top: 8em;
+  }
+}
+
+@media (max-width: 920px) {
+  .destination-container {
+    background-image: url('./img/background-crew-tablet.jpg');
+  }
+  .main-container {
+    margin-top: 4em;
+  }
+}
+
+@media (max-width: 770px) {
+  .main-container {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-text-container {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .number,
+  .text {
+    font-size: 1.2rem;
+  }
+  .component-container {
+    margin-top: 4vw;
+  }
+}
